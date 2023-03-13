@@ -1,0 +1,42 @@
+h1,h2{
+    text-align: center;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    padding: 10px;
+}
+main > div:not([id]):not([class]) {
+    border: 1px solid #0f0f0f;
+    padding: 10px;
+}
+label{
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+input, select{
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+input[type="submit"]{
+    text-align: center;
+}
+table {
+    /*create margin variable*/
+    --margin: 40px;
+    margin: 0px var(--margin) 0px var(--margin);
+    padding: 2px;
+    text-align: center;
+    width: calc(100% - var(--margin) * 2);
+    font-size: 20px;
+}
+th, td {
+    padding: 30px;
+}
+table,th, td {
+    border: 1px solid #0f0f0f;
+}

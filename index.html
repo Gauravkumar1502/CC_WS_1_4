@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WorkSheet 1.4</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h1>CURD Operation on MySQL Server 8.0</h1><br />
+  <main>
+    <div>
+      <h2>Search/Delete Student</h2>
+      <hr />
+      <form method="post" action="Controller">
+        <label for="UID">Enter Student UID:</label>
+        <input type="text" name="UID" placeholder="Enter Student UID" required /><br /><br />
+        <input type="submit" value="Search Student" name="Search" />
+        <input type="submit" value="Delete Student" name="Delete" />
+      </form>
+    </div>
+    <div>
+      <h2>Add/Update Student</h2>
+      <hr />
+      <form method="post" action="Controller">
+        <label for="UID">Enter Student UID:</label>
+        <input type="text" name="UID" placeholder="Enter Student UID" required /><br /><br />
+        <label for="Name">Enter Student Name:</label>
+        <input type="text" name="Name" placeholder="Enter Full Name" required /><br /><br />
+        <label for="Branch">Branch:</label>
+        <select name="Branch">
+          <option value="MCA">MCA</option>
+          <option value="MCC">MCC</option>
+          <option value="MCI">MCI</option>
+        </select><br /><br />
+        <label for="Section">Section:</label>
+        <select name="Section">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select><br /><br />
+        <label for="Group">Group:</label>
+        <select name="Group">
+          <option value="A">A</option>
+          <option value="B">B</option>
+        </select><br /><br />
+        <input type="submit" value="Add Student" name="Add" />
+        <input type="submit" value="Update Student" name="Update" />
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
